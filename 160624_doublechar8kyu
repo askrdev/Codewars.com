@@ -1,9 +1,0 @@
-""" Codewars.com/doublechar 8 Kyu """
-
-string1 = "aku adalah seorang kapiten"
-string2 = "aku bukanlah superstar"
-
-def double_char(s):
-    return "".join([a * 2 for a in s])
-
-print(double_char(string2))
