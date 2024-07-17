@@ -20,5 +20,30 @@ Examples (input -> output)
 "aBcd","AbCD" -> true
 "AB","Ab"     -> false
 "",""         -> false
-"""
 
+######
+Test Code
+test.assert_equals(is_opposite("ab","AB") , True);
+        test.assert_equals(is_opposite("aB","Ab") , True);
+        test.assert_equals(is_opposite("aBcd","AbCD") , True);
+        test.assert_equals(is_opposite("AB","Ab") , False);
+        test.assert_equals(is_opposite("","") , False);
+######
+"""
+s1 = 'AB'
+s2 = 'ab'
+
+def is_opposite(s1,s2):
+    return False if s1 == '' and s2 == '' else False if s1[::len('A' if len(s1) == '' else len(s1))] == s2[::len('A' if len(s2) == '' else len(s2))] else True
+
+# print(is_opposite(s1,s2))
+
+#Versi Simple
+def is_opposite(s1,s2):
+    return s1 == s2.swapcase() if s1 else False
+
+# print(is_opposite(s1,s2))
+
+print(s1 == s2.swapcase())
+print(s1.lower())
+print(s2.swapcase())
