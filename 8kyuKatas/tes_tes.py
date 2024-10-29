@@ -1,0 +1,6 @@
+electronics = ("Brazil",'filiphine')
+print(electronics)
+el = electronics.count("Brazil")
+print(el)
+print(type(el))
+print(sum(electronics))

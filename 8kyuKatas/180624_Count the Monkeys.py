@@ -16,7 +16,7 @@ For example(Input --> Output):
 
 """
 Example input
-ef basic_tests():
+def basic_tests():
     test.describe("Basic tests")
     @test.it('Basic Test Cases')
     def basic_test_cases():
